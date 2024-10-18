@@ -4,7 +4,6 @@ include(vulkan)
 # LibCore to depend on generated sources.
 set(SOURCES
     ArgsParser.cpp
-    Directory.cpp
     DirectoryEntry.cpp
     DirIterator.cpp
     Environment.cpp
@@ -13,6 +12,12 @@ set(SOURCES
     System.cpp
     Version.cpp
 )
+
+if (WIN32)
+    list(APPEND SOURCES DirectoryWindows.cpp)
+else()
+    list(APPEND SOURCES Directory.cpp)
+endif()
 
 serenity_lib(LibCoreMinimal coreminimal)
 

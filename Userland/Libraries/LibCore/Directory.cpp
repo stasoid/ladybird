@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: BSD-2-Clause
  */
 
-#include "Directory.h"
-#include "DirIterator.h"
-#include "System.h"
+#include <LibCore/Directory.h>
+#include <LibCore/System.h>
 #include <dirent.h>
+#include <sys/stat.h>
 
 namespace Core {
 

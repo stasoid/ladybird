@@ -10,15 +10,9 @@
 #include <AK/Error.h>
 #include <AK/Format.h>
 #include <AK/Function.h>
-#include <AK/IterationDecision.h>
 #include <AK/LexicalPath.h>
 #include <AK/Noncopyable.h>
-#include <AK/Optional.h>
 #include <LibCore/DirIterator.h>
-#include <LibCore/DirectoryEntry.h>
-#include <LibCore/File.h>
-#include <dirent.h>
-#include <sys/stat.h>
 
 namespace Core {
 
@@ -51,7 +45,9 @@ public:
     static ErrorOr<void> for_each_entry(StringView path, DirIterator::Flags, ForEachEntryCallback);
     ErrorOr<void> for_each_entry(DirIterator::Flags, ForEachEntryCallback);
 
+#if !defined(AK_OS_WINDOWS)
     ErrorOr<void> chown(uid_t, gid_t);
+#endif
 
     static ErrorOr<bool> is_valid_directory(int fd);
 
