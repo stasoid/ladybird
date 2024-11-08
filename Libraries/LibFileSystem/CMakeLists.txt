@@ -1,6 +1,7 @@
 set(SOURCES
-    FileSystem.cpp
-    TempFile.cpp
+#    FileSystem.cpp
+#    TempFile.cpp
+dummy.cpp
 )
 
 serenity_lib(LibFileSystem filesystem)

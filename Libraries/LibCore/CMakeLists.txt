@@ -2,7 +2,7 @@
 # LibCore to depend on generated sources.
 set(SOURCES
     ArgsParser.cpp
-    Directory.cpp
+#    Directory.cpp
     DirectoryEntry.cpp
     DirIterator.cpp
     Environment.cpp
@@ -29,18 +29,18 @@ if (LAGOM_TOOLS_ONLY)
 endif()
 
 set(SOURCES
-    Command.cpp
-    ConfigFile.cpp
+#    Command.cpp
+#    ConfigFile.cpp
     DateTime.cpp
     ElapsedTimer.cpp
     Event.cpp
     EventLoop.cpp
     EventLoopImplementation.cpp
     EventReceiver.cpp
-    MappedFile.cpp
+#    MappedFile.cpp
     MimeData.cpp
-    Notifier.cpp
-    Process.cpp
+#    Notifier.cpp
+#    Process.cpp
     Resource.cpp
     ResourceImplementation.cpp
     ResourceImplementationFile.cpp
