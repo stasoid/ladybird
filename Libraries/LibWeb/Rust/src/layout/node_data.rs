@@ -108,6 +108,7 @@ pub enum NodeKind {
     NavigableContainerViewport = 14,
     Node = 15,
     NodeWithStyle = 16,
+    NodeWithStyleAndBoxModelMetrics = 17,
     RadioButton = 18,
     RangeInputBox = 19,
     ReplacedBox = 20,

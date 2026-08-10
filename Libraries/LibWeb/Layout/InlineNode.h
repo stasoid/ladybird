@@ -10,8 +10,8 @@
 
 namespace Web::Layout {
 
-class InlineNode final : public NodeWithStyle {
-    LAYOUT_NODE(InlineNode, NodeWithStyle);
+class InlineNode final : public NodeWithStyleAndBoxModelMetrics {
+    LAYOUT_NODE(InlineNode, NodeWithStyleAndBoxModelMetrics);
 
 public:
     InlineNode(DOM::Document&, DOM::Element*, NonnullRefPtr<CSS::ComputedValues const>);

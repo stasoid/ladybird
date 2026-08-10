@@ -14,7 +14,7 @@
 namespace Web::Layout {
 
 InlineNode::InlineNode(DOM::Document& document, DOM::Element* element, NonnullRefPtr<CSS::ComputedValues const> style)
-    : Layout::NodeWithStyle(document, element, style)
+    : Layout::NodeWithStyleAndBoxModelMetrics(document, element, style)
 {
 }
 

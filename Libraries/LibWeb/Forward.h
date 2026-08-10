@@ -1018,6 +1018,7 @@ class LayoutRustBridge;
 class Node;
 class NodeArena;
 class NodeWithStyle;
+class NodeWithStyleAndBoxModelMetrics;
 class RadioButton;
 class ReplacedBox;
 class SVGSVGBox;

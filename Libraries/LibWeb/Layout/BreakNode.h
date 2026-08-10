@@ -11,8 +11,8 @@
 
 namespace Web::Layout {
 
-class BreakNode final : public NodeWithStyle {
-    LAYOUT_NODE(BreakNode, NodeWithStyle);
+class BreakNode final : public NodeWithStyleAndBoxModelMetrics {
+    LAYOUT_NODE(BreakNode, NodeWithStyleAndBoxModelMetrics);
 
 public:
     BreakNode(DOM::Document&, HTML::HTMLBRElement&, NonnullRefPtr<CSS::ComputedValues const>);
